@@ -1,0 +1,140 @@
+@import 'normalize';
+
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: #f5f7fa;
+  font-family: sans-serif;
+}
+.header {
+  align-items: center;
+  background-color: #fff;
+  justify-content: center;
+  display: flex;
+  height: 60px;
+}
+.app-title {
+  color: #6f95ff;
+  font-style: italic;
+  font-family: serif;
+}
+.main-menu {
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  height: 80px;
+  padding-left: 80px;
+}
+.main-menu__title {
+  font-size: 24px;
+  color: #838c91;
+  letter-spacing: -0.45px;
+  margin: 0;
+}
+.board-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 30px;
+  padding-left: 80px;
+}
+.board-item {
+  align-items: center;
+  background: #2caffc;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.45px;
+  margin-bottom: 20px;
+  height: 131px;
+  transition: 0.3s;
+  width: 355px;
+
+  &:hover {
+    background-color: #1d76ab;
+  }
+}
+
+.new-board__form {
+  background-color: #FFF;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  padding: 14px 45px 32px 45px;
+  transition: 0.4s;
+  width: 355px;
+
+  .title {
+    font-size: 24px;
+    color: #838C91;
+    letter-spacing: -0.45px;
+    margin-bottom: 17px;
+    text-align: center;
+  }
+  .cancel {
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+    font-size: 16px;
+    color: #8492A6;
+    letter-spacing: 0;
+  }
+  .label {
+    font-size: 18px;
+    color: #838C91;
+    letter-spacing: -0.34px;
+    margin-bottom: 10px;
+  }
+  .input {
+    height: 40px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
+.buttons__create-board {
+  align-items: center;
+  background: #e2e4e6;
+  border-radius: 4px;
+  color: #838c91;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.45px;
+  height: 131px;
+  transition: 0.4s;
+  width: 355px;
+
+  &:hover {
+    background-color: #c1c8d0;
+    color: #4f595f;
+  }
+}
+.button {
+  background: #13CE66;
+  border-radius: 3px;
+  border: none;
+  color: #FFF;
+  cursor: pointer;
+  font-weight: 500; 
+  letter-spacing: 1px;
+  height: 40px;
+  width: 142px;
+
+  &.green {
+    background-color: #13CE66;
+  }
+}
+.buttons__action-group {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}

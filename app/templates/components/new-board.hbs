@@ -1,0 +1,15 @@
+{{#if isExpanded}}
+  <div class="new-board__form">
+    <div class="title">Créer un tableau...</div>
+    <span class="label">Title</span>
+    <form {{action "create" on="submit"}}>
+      {{input value=boardName}}
+      <div class="buttons__action-group">
+        <button class="button green create">Créer</button>
+        <span class="cancel" {{action (toggle 'isExpanded' this)}}>Annuler</span>
+      </div>
+    </form>
+  </div>
+{{else}}
+  <div class="buttons__create-board" {{action (toggle "isExpanded" this)}}>Créer un tableau...</div>
+{{/if}}

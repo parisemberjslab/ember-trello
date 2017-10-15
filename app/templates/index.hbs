@@ -1,0 +1,9 @@
+<div class="main-menu"> <h1 class="main-menu__title">Tableaux</h1></div>
+<div class="board-list">
+  {{#each model as |board|}}
+    {{#link-to 'board' board}}
+    <div class="board-item">{{board.title}}</div>
+    {{/link-to}}
+  {{/each}}
+  {{new-board}}
+</div>
